@@ -1,10 +1,14 @@
 let myMap = L.map('map').setView([44, -73], 12) // L is leaflet object
-
+let restLinks = document.getElementById('restLinks')
 
 L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
     maxZoom: 17,
     attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 }).addTo(myMap) // When copying from leaflet site, be careful that this variable is "myMap"
+
+
+
+
 
 let marker = L.marker([44, -73])
 // marker.bindPopup('<h4>It\'s time to start asking the right questions</h4>')
@@ -41,6 +45,7 @@ async function getJsonThenPlaceMarkers() {
                     console.log(restData)
                     // let restLink = `<div><a href=${object.infoUrl}>${object.id}</a> </div>`
                     let restLink = `<div><a href = "/restaurant.html#${restData.id}"> ${restData.name}</a></div>`
+                    restLinks.innerHTML += restLink //
                     placeMarker(restData.coords)
                 })
             // placeMarker(object)
