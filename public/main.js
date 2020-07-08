@@ -46,7 +46,7 @@ async function getJsonThenPlaceMarkers() {
                     // let restLink = `<div><a href=${object.infoUrl}>${object.id}</a> </div>`
                     let restLink = `<div><a href = "/restaurant.html#${restData.id}"> ${restData.name}</a></div>`
                     restLinks.innerHTML += restLink //
-                    placeMarker(restData.coords)
+                    placeMarker(restData)
                 })
             // placeMarker(object)
         }
@@ -55,19 +55,20 @@ async function getJsonThenPlaceMarkers() {
 
 
 
-function placeMarker(coords) { // Placemarker takes a json object to perform multiple operations on it like add its address onto the map and get its website
-    
-    //     newMarker.addEventListener('click', () => {
-    //         // MAKE SURE YOU CLEAR THE BODY
-    //         window.open("/restaurant") // Needs to link to a route, not a file. The server handles the file, not the clientside JS
-    //         // Send url fragment designated by hash mark to represent the object using the object.id (joes-diner) to /restaurant#joes-diner
+function placeMarker(object) { // Placemarker takes a json object to perform multiple operations on it like add its address onto the map and get its website
 
-    //         // transfer into restaurant.html(restHTML)  // Transfers HTML into another HTML file using Javascript is something that React could use
-    //         // window.open("restaurant.html")            
 
-    // })
-    let array = [coords[0], coords[1]]
+    let array = [object.coords[0], object.coords[1]]
     let newMarker = L.marker(array)
+    newMarker.addEventListener('click', () => {
+        // MAKE SURE YOU CLEAR THE BODY
+        window.open(`/restaurant.html#${object.id}`) // Needs to link to a route, not a file. The server handles the file, not the clientside JS
+        // Send url fragment designated by hash mark to represent the object using the object.id (joes-diner) to /restaurant#joes-diner
+
+        // transfer into restaurant.html(restHTML)  // Transfers HTML into another HTML file using Javascript is something that React could use
+        // window.open("restaurant.html")            
+
+    })
     newMarker.addTo(myMap)
     return newMarker
 }
