@@ -1,0 +1,34 @@
+
+/* Buttons ///////////////////////////////////////////////////////////////////////////////////////////////*/
+/* “Good artists borrow, great artists steal.” -Picasso. All the code below is happily stolen for buttons*/
+
+
+.buttonPic{
+    background-color: crimson; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 30%;
+	transition: transform 1s;
+}
+
+
+.buttonPic:hover {
+    color: black;
+	border: black;
+	transform: scale(2);
+}
+
+
+.buttonPic a {
+	background-color: black;
+	color: crimson;
+}
+
+
+

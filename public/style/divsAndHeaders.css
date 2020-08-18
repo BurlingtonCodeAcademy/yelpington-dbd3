@@ -1,0 +1,108 @@
+/* Headers /////////////////////////////////////////////////////////////////////////*/
+a:hover h3 {
+    color: black;
+}
+
+h2 {
+    font-family: fantasy;
+    color: crimson;
+}
+
+h3 { 
+    margin-top: 0;
+    font-size: 5em;
+    font-family: fantasy;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-family: fantasy;
+    color: gray;
+    text-align: center;
+}
+
+
+
+/* Map and Links /////////////////////////////////////////////////////////////////////////*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#map {
+    height: 400px;
+    width: 400px;
+}
+
+.mapAndLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    background-image: url(/images/restaurant.jpg);
+}
+
+
+/* Index Restaurant Card Divs ////////////////////////////////////////////////////////////////////*/
+
+#restLinks {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: gray;
+    max-width: 20%;
+    height: 100%;
+    overflow-y:auto
+}
+
+
+.restLink {
+    font-family: fantasy;
+    
+}
+
+
+.linkDiv {
+    text-decoration: none;
+    padding: 2em;
+    font-family: fantasy;
+    font-size: 1.5em;
+    border-top: black solid;
+    border-bottom: black solid;
+}
+
+#restLinks a {
+    color: honeydew;
+}
+
+#restLinks a:hover  {
+    color: crimson
+}
+
+/* Restaurant Info ///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Rest Info is the information about the specific restaurant when clicked */
+#restInfo {
+    display: flex;
+    font-family: fantasy;
+    flex-direction: row;
+    border-radius: 5%;
+    background-color: wheat;
+    font-size: xx-large;
+}
+
+.restInfoRightColumn {
+    display: flex;
+    flex-direction: column;
+    
+}
+#restInfo a {
+    color: crimson;
+}
+
+#restInfo a:hover {
+    color:black;
+}

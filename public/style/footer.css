@@ -1,0 +1,108 @@
+/* FOOTER ITEMS ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    
+    position: fixed;
+    border-top: crimson solid;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 0em;
+}
+
+/* LEFT SIDE COLUMNS ////////////////////////////////////////////////////////////////////////////////////*/
+
+.leftFooterCol {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 2em;
+    max-width: 25em;
+ 
+}
+
+.textBoxes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+#name {
+    margin-bottom: 2em;
+    width: 48%;
+}
+
+#email {
+    margin-bottom: 2em;
+    width: 48%;
+}
+
+#comment {
+    width: 100%;
+    height: 5em;
+}
+
+/* Right Side Columns ////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.rightFooterCol {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+   
+}
+
+.rightFooterCol a {
+    text-decoration: none;
+}
+
+.rightFooterCol p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.iconCol {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+.iconTextRow{
+    display: flex;
+}
+
+
+
+.iconTextRow img {
+    transition: transform 1s;
+}
+
+.iconTextRow:hover img{
+    transform: rotate(1080deg);
+}
+
+.IconCol {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.iconTextRow img {
+    height: 25px;
+    width: 25px;
+}
+
+.colRow {
+    display: flex;
+    height: 100%;
+
+}
