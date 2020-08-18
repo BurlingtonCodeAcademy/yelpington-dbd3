@@ -14,7 +14,8 @@
     margin-bottom: 2em;
     margin-top: 2em;
     width: 30%;
-	transition: transform 1s;
+    transition: transform 1s;
+    font-family: fantasy;
 }
 
 
