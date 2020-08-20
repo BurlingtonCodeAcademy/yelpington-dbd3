@@ -6,8 +6,10 @@
     align-items: center;
     background-color: wheat;
     
-    position: fixed;
+    position: relative;
     border-top: crimson solid;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer {
@@ -15,6 +17,7 @@
     justify-content: center;
     margin: 2em;
     padding: 0em;
+    
 }
 
 /* LEFT SIDE COLUMNS ////////////////////////////////////////////////////////////////////////////////////*/
